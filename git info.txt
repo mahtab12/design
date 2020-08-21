@@ -1,0 +1,15 @@
+New project 
+
+1. git init
+2. git repo link
+
+ 
+1. git status
+2. git add filename
+3. git commit -m "Commit message"
+4. git push origin master
+
+
+1. git pull origin master
+
+1. git clone
