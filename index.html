@@ -2,12 +2,66 @@
 <html>
 <head>
 	<title>My Title</title>
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 	<link rel="stylesheet" href="css/style.css">
+	<style type="text/css">
+		html{
+			  scroll-behavior: smooth;
+		}
+		h2 {
+		    margin-top: 25px;
+		    font-size: 21px;
+		    text-align: center;
+		    animation: fadein 2s;
+		    -moz-animation: fadein 2s; /* Firefox */
+		    -webkit-animation: fadein 2s; /* Safari and Chrome */
+		    -o-animation: fadein 2s; /* Opera */
+		}
+		@keyframes fadein {
+		    from {
+		        opacity:0;
+		    }
+		    to {
+		        opacity:1;
+		    }
+		}
+		@-moz-keyframes fadein { /* Firefox */
+		    from {
+		        opacity:0;
+		    }
+		    to {
+		        opacity:1;
+		    }
+		}
+		@-webkit-keyframes fadein { /* Safari and Chrome */
+		    from {
+		        opacity:0;
+		    }
+		    to {
+		        opacity:1;
+		    }
+		}
+		@-o-keyframes fadein { /* Opera */
+		    from {
+		        opacity:0;
+		    }
+		    to {
+		        opacity: 1;
+		    }
+		}
+	</style>
 </head>
 <body>
 	<header>
 		<img src="images/ffsfd.png" height="200" width="200">
-		<h1>My <small>SITE </small>NAme</h1>
+		<h1 id="title">My <small>SITE </small>NAme</h1>
+		<button onclick="change()">BUTTON</button>
+		<button id="search-box-open">SEARCH</button>
+		<button id="add">ADD</button>
+		<button id="subs">SUBSCTRACT</button>
+		<span id="counter">1</span>
+		<a href="#helloworld">GO TO SECTION</a>
 	</header>
 	<nav>
 		<ul>
@@ -37,29 +91,216 @@
 		<div class="box">
 			<h2>Lorem Ispum</h2>
 			<div class="img-wrapper">
-				<img src="images/installation.jpg"/>
+				<img src="images/installation.jpg" id="image1" onmouseover="mousechange( this )" onmouseout="mouseout( this )" />
 			</div>
 			<p>Quickly design and customize responsive mobile-first sites with Bootstrap, the world’s most popular front-end open source toolkit, featuring Sass variables and mixins, responsive grid system, extensive prebuilt components, and powerful JavaScript plugins.</p>
 		</div>
 		<div class="box">
 			<h2>Lorem Ispum</h2>
 			<div class="img-wrapper">
-				<img src="images/installation.jpg"/>
+				<img src="images/installation.jpg" id="image2" onmouseover="mousechange( this )" onmouseout="mouseout( this )" />
 			</div>
 			<p>Quickly design and customize responsive mobile-first sites with Bootstrap, the world’s most popular front-end open source toolkit, featuring Sass variables and mixins, responsive grid system, extensive prebuilt components, and powerful JavaScript plugins.</p>
 		</div>
 		<div class="box box3">
 			<h2>Lorem Ispum</h2>
 			<div class="img-wrapper">
-				<img src="images/installation.jpg"/>
+				<img src="images/installation.jpg" id="image3" onmouseover="mousechange( this )" onmouseout="mouseout( this )" />
 			</div>
 			<p>Quickly design and customize responsive mobile-first sites with Bootstrap, the world’s most popular front-end open source toolkit, featuring Sass variables and mixins, responsive grid system, extensive prebuilt components, and powerful JavaScript plugins.</p>
 		</div>
 	</section>
 
+	<section id="box-section">
+		<div class="box">
+			<h2>Lorem Ispum</h2>
+			<div class="img-wrapper">
+				<img src="images/installation.jpg" id="image1" onmouseover="mousechange( this )" onmouseout="mouseout( this )" />
+			</div>
+			<p>Quickly design and customize responsive mobile-first sites with Bootstrap, the world’s most popular front-end open source toolkit, featuring Sass variables and mixins, responsive grid system, extensive prebuilt components, and powerful JavaScript plugins.</p>
+		</div>
+		<div class="box">
+			<h2>Lorem Ispum</h2>
+			<div class="img-wrapper">
+				<img src="images/installation.jpg" id="image2" onmouseover="mousechange( this )" onmouseout="mouseout( this )" />
+			</div>
+			<p>Quickly design and customize responsive mobile-first sites with Bootstrap, the world’s most popular front-end open source toolkit, featuring Sass variables and mixins, responsive grid system, extensive prebuilt components, and powerful JavaScript plugins.</p>
+		</div>
+		<div class="box box3">
+			<h2>Lorem Ispum</h2>
+			<div class="img-wrapper">
+				<img src="images/installation.jpg" id="image3" onmouseover="mousechange( this )" onmouseout="mouseout( this )" />
+			</div>
+			<p>Quickly design and customize responsive mobile-first sites with Bootstrap, the world’s most popular front-end open source toolkit, featuring Sass variables and mixins, responsive grid system, extensive prebuilt components, and powerful JavaScript plugins.</p>
+		</div>
+	</section>
+
+	<section id="box-section">
+		<div class="box">
+			<h2>Lorem Ispum</h2>
+			<div class="img-wrapper">
+				<img src="images/installation.jpg" id="image1" onmouseover="mousechange( this )" onmouseout="mouseout( this )" />
+			</div>
+			<p>Quickly design and customize responsive mobile-first sites with Bootstrap, the world’s most popular front-end open source toolkit, featuring Sass variables and mixins, responsive grid system, extensive prebuilt components, and powerful JavaScript plugins.</p>
+		</div>
+		<div class="box">
+			<h2>Lorem Ispum</h2>
+			<div class="img-wrapper">
+				<img src="images/installation.jpg" id="image2" onmouseover="mousechange( this )" onmouseout="mouseout( this )" />
+			</div>
+			<p>Quickly design and customize responsive mobile-first sites with Bootstrap, the world’s most popular front-end open source toolkit, featuring Sass variables and mixins, responsive grid system, extensive prebuilt components, and powerful JavaScript plugins.</p>
+		</div>
+		<div class="box box3">
+			<h2>Lorem Ispum</h2>
+			<div class="img-wrapper">
+				<img src="images/installation.jpg" id="image3" onmouseover="mousechange( this )" onmouseout="mouseout( this )" />
+			</div>
+			<p>Quickly design and customize responsive mobile-first sites with Bootstrap, the world’s most popular front-end open source toolkit, featuring Sass variables and mixins, responsive grid system, extensive prebuilt components, and powerful JavaScript plugins.</p>
+		</div>
+	</section>
+
+	<section id="box-section">
+		<div class="box">
+			<h2>Lorem Ispum</h2>
+			<div class="img-wrapper">
+				<img src="images/installation.jpg" id="image1" onmouseover="mousechange( this )" onmouseout="mouseout( this )" />
+			</div>
+			<p>Quickly design and customize responsive mobile-first sites with Bootstrap, the world’s most popular front-end open source toolkit, featuring Sass variables and mixins, responsive grid system, extensive prebuilt components, and powerful JavaScript plugins.</p>
+		</div>
+		<div class="box">
+			<h2>Lorem Ispum</h2>
+			<div class="img-wrapper">
+				<img src="images/installation.jpg" id="image2" onmouseover="mousechange( this )" onmouseout="mouseout( this )" />
+			</div>
+			<p>Quickly design and customize responsive mobile-first sites with Bootstrap, the world’s most popular front-end open source toolkit, featuring Sass variables and mixins, responsive grid system, extensive prebuilt components, and powerful JavaScript plugins.</p>
+		</div>
+		<div class="box box3">
+			<h2>Lorem Ispum</h2>
+			<div class="img-wrapper">
+				<img src="images/installation.jpg" id="image3" onmouseover="mousechange( this )" onmouseout="mouseout( this )" />
+			</div>
+			<p>Quickly design and customize responsive mobile-first sites with Bootstrap, the world’s most popular front-end open source toolkit, featuring Sass variables and mixins, responsive grid system, extensive prebuilt components, and powerful JavaScript plugins.</p>
+		</div>
+	</section>
+
+	<section id="helloworld">
+		<style type="text/css">
+			.box-accordion{
+				border:2px solid tomato;
+			}
+			.box-accordion h2{
+				border:1px solid grey;
+			}
+			.box-accordion p{
+				display: none;
+			}
+		</style>
+
+		
+		<div class="box-accordion">
+			<h2 class="title"><a href="#">Click Me 1</a></h2>
+			<p>Quickly design and customize responsive mobile-first sites with Bootstrap, the world’s most popular front-end open source toolkit, featuring Sass variables and mixins, responsive grid system, extensive prebuilt components, and powerful JavaScript plugins.</p>
+		</div>
+		<div class="box-accordion">
+			<h2 class="title"><a href="#">Click Me 1</a></h2>
+			<p>Quickly design and customize responsive mobile-first sites with Bootstrap, the world’s most popular front-end open source toolkit, featuring Sass variables and mixins, responsive grid system, extensive prebuilt components, and powerful JavaScript plugins.</p>
+		</div>
+		<div class="box-accordion">
+			<h2 class="title"><a href="#">Click Me 1</a></h2>
+			<p>Quickly design and customize responsive mobile-first sites with Bootstrap, the world’s most popular front-end open source toolkit, featuring Sass variables and mixins, responsive grid system, extensive prebuilt components, and powerful JavaScript plugins.</p>
+		</div>
+		<div class="box-accordion">
+			<h2 class="title"><a href="#">Click Me 1</a></h2>
+			<p>Quickly design and customize responsive mobile-first sites with Bootstrap, the world’s most popular front-end open source toolkit, featuring Sass variables and mixins, responsive grid system, extensive prebuilt components, and powerful JavaScript plugins.</p>
+		</div>
+	
+	</section>
+	<div class="search-box" style="display:none;position: absolute;top: 0;width: 100%;height: 100%;background: rgba( 155,204,084, 0.6);">
+		<div class="searc-box-wrapper" style="position: absolute;top: 56%;left: 45%;">
+			<input type="text">
+			<button>Search</button> 
+		</div>
+	</div>
+
+	<style type="text/css">
+		#scrollToTop{
+			border: 1px solid yellow;
+			border-radius: 50%;
+			background:tomato;
+			width: 50px;
+			height: 50px;
+			position: fixed;
+			right: 10px;
+			bottom: 10px;
+			display: none;			
+		}
+		#scrollToTop a{
+		    font-size: 21px;
+		    position: relative;
+		    top: 6px;
+		    left: 14px;
+		    color:white;
+		}
+	</style>
+	<div id="scrollToTop">
+		<a href="hello.html"><i class="fa fa-arrow-up"></i></a>
+	</div>
 	<footer id="box-section">
 		<a href="#">Contact Us</a>
+		
 	</footer>
 
+	<script type="text/javascript">
+		var img = document.getElementsByClassName('img-wrapper');
+		img[0].style.border = "1px solid red";
+		img[0].style.paddingRight = "20px";
+
+		var img = document.getElementsByTagName('img');
+		console.log( img );
+		img[1].style.backgroundColor = "yellow";
+
+		function change() {
+			var value = confirm("Are you sure?");
+			console.log( value );
+		}
+
+		function mousechange( th ){
+			th.style.width = "200px";
+		}
+
+		function mouseout( th ) {
+			th.style.width = "300px";
+		}
+	</script>
+	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<script type="text/javascript" src="js/main.js"></script>
+
+	<script type="text/javascript">
+		$(document).ready( function(){
+			$('.box-accordion a').click( function(e){
+				e.preventDefault();
+				$('.box-accordion p').css('display','none');
+				$(this).parent().siblings().fadeIn(1000);
+			})
+
+			$('#scrollToTop a').click( function(e){
+				e.preventDefault();
+				window.scrollTo({top: 0, behavior: 'smooth'});
+			});
+
+
+			$(window).scroll(function(){
+				var pos = $(this).scrollTop();
+				if( pos > 533) {
+					$('#scrollToTop').fadeIn(1000);
+				} else {
+					$('#scrollToTop').fadeOut(1000);
+				}
+			});
+
+
+			
+		});
+	</script>
 </body>
 </html>
